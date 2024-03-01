@@ -1,27 +1,29 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interstitial Page</title>
-</head>
-<body>
-    <title>WARNING: Some content is not suitable for all viewers!<title>
-           h1 {
+    <style>
+        h1 {
             text-align: center;
             color: maroon; 
             font-weight: bold;
-		font-family: Arial; 	
+            font-family: Arial; 	
         }
-	body{
-	background-color:#FFF2F2
-	}
-	p{text-align: center;
+        body{
+            background-color:#FFF2F2;
+        }
+        p{
+            text-align: center;
             color: navy;
-	font-family: Arial;
-	} 
-
-  <h1>Are you Stefan? </h1>
+            font-family: Arial;
+        } 
+    </style>
+</head>
+<body>
+    <h1>WARNING: Some content is not suitable for all viewers!</h1>
+    <h1>Are you Stefan? </h1>
      
     <button onclick="redirectToMainPage(false)">Yes! I am he!</button>
     <button onclick="redirectToMainPage(true)">No, never heard of him!</button>
@@ -31,7 +33,7 @@
             if (answer) {
                 window.location.href = 'Bindex.html'; 
             } else {
-                      window.location.href = 'stefanpage.html'; 
+                window.location.href = 'stefanpage.html'; 
             }
         }
     </script>
