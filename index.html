@@ -6,10 +6,36 @@
     <title>Interstitial Page</title>
 </head>
 <body>
-    <h1>WARNING</h1>
-  <h2>Are you Stefan? </h2>
-    <button onclick="redirectToMainPage(false)">Yes</button>
-    <button onclick="redirectToMainPage(true)">No</button>
+    <title>WARNING: Some content is not suitable for all viewers!<title>
+
+           h1 {
+            text-align: center;
+            color: maroon; 
+            font-weight: bold;
+		font-family: Arial; 	
+        }
+	body{
+	background-color:#FFF2F2
+	}
+	p{text-align: center;
+            color: navy;
+	font-family: Arial;
+	} 
+
+.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+             width: 250px;
+
+	 }
+	img.gold-border {
+            border: 5px solid #d4af37;
+	}
+  <h1>Are you Stefan? </h1>
+     
+    <button onclick="redirectToMainPage(false)">Yes! I am he!</button>
+    <button onclick="redirectToMainPage(true)">No, never heard of him!</button>
 
     <script>
         function redirectToMainPage(answer) {
