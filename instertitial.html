@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstitial Page</title>
+</head>
+<body>
+    <h1>WARNING</h1>
+  <h2>Are you Stefan? </h2>
+    <button onclick="redirectToMainPage(false)">Yes</button>
+    <button onclick="redirectToMainPage(true)">No</button>
+
+    <script>
+        function redirectToMainPage(answer) {
+            if (answer) {
+                window.location.href = 'index.html'; 
+            } else {
+                      window.location.href = 'stefanpage.html'; 
+            }
+        }
+    </script>
+</body>
+</html>
